@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;1,100&family=Martian+Mono:wght@200&family=Mooli&family=Roboto+Slab:wght@100;400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(37, 11, 62);
+            color: white;
+            font-family: 'Fira Sans', sans-serif;
+            font-family: 'Martian Mono', monospace;
+            font-family: 'Mooli', sans-serif;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(9, 13, 35);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: antiquewhite;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: rgb(205, 48, 233);
+            font-size: 1.01rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(156, 90, 217);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 110px 0;
+        }
+
+        .firstSection div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+        }
+        .leftSection .button{
+           padding: 23px;
+        }
+        .leftSection .btn{
+            padding: 10px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 50%;
+        }
+
+        .purple {
+            color: rgb(19, 109, 188);
+        }
+
+        .text-lavender {
+            color: lavender;
+        }
+
+        #element {
+            color: rgb(19, 109, 188);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 1px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .verticle {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 30px;
+            position: relative;
+            top: -35px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 17px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 70px;
+            color: grey;
+            width: 200px;
+            font-size: 15px;
+        }
+        footer{
+            background-color: rgb(63, 7, 74);
+         
+        }
+        .footer{
+            display: flex;
+            padding: 38px 120px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer > div{
+            width: 223px;
+        }
+        footer .footer-linkedin{
+            text-align: center;
+            color: rgb(169, 168, 168);
+            padding: 12px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Anusuya's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Skills</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, I am <span class="purple">Anusuya</span>
+                <div>I am passionate about</div>
+                    
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit GitHub</button>
+                </div>
+                
+            </div>
+            <div class="rightSection">
+                <img src="Anusuya.jpg" alt="">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-lavender">What I have done so far</span>
+            <h1>Education</h1>
+
+            <div class="box">
+                <div class="verticle">
+                    <img class="image-top" src="download.png" alt="">
+                    <div class="vertical-title">
+                        Secondary Education (upto 2015)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officia esse molestiae ratione
+                        placeat
+                        nesciunt modi delectus saepe perspiciatis quaerat?
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        Higher Secondary Education(2015-2017)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officia esse molestiae ratione
+                        placeat
+                       
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="dsa.png" alt="">
+                    <div class="vertical-title">
+                        Diploma in Computer Science & Technology(2018-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officia esse molestiae ratione
+                        placeat
+                       
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="ai ml.png" alt="">
+                    <div class="vertical-title">
+                        B.Tech in Computer Science & Engineering(2021-Present)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officia esse molestiae ratione
+                        placeat
+                       
+                    </div>
+                </div>
+                
+               
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="footer">
+            <div class="#1st">
+                <h3>Anusuya's Student Portfolio</h3>
+            </div>
+           
+            <div class="#2nd">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Skills & Projects</li>
+                    <li>Contact me</li>
+                </ul>
+            </div>
+            <div class="#3rd">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Skills & Projects</li>
+                    <li>Contact me</li>
+                </ul>
+            </div>
+           
+            <div class="#4th">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Skills & Projects</li>
+                    <li>Contact me</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-linkedin">
+            www.linkedin.com/in/anusuya-das-6b8624249
+        </div>
+    </footer>
+    <!-- Setup and start animation! -->
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Development', 'C++', 'JAVA', 'Machine Learnng'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
